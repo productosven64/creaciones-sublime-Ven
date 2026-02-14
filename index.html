@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones Sublime - Personalización Premium en La Guaira</title>
+    <meta name="description"
+        content="Personalización de franelas, tazas, vasos, llaveros y gorras en La Guaira, Venezuela. Calidad sublime para tus momentos especiales.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Creaciones Sublime<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Nuestros Servicios</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button class="btn-primary" id="openChat">Agendar Cita</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <h1 class="fade-in">Tu estilo, <span>personalizado</span> a la perfección</h1>
+                <p class="fade-in">Desde La Guaira para toda Venezuela. Creamos piezas únicas en franelas, tazas, gorras
+                    y más con acabados de alta calidad.</p>
+
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section id="productos" class="services container">
+            <div class="section-title">
+                <span class="badge">Nuestros Servicios</span>
+                <h2>Areas de Trabajo</h2>
+                <p>Nuestra experiencia se basa en cuatro áreas fundamentales para brindarte la mejor calidad</p>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Pilar 1: Estampado en Telas -->
+                <div class="service-card clickable-service" data-service="textiles">
+                    <div class="card-image">
+                        <img src="assets/images/pilar1_textiles.png" alt="Estampado en Telas">
+                    </div>
+                    <div class="card-body">
+                        <h3>1. Estampado en Telas</h3>
+                        <p>Incluye franelas, bolsos, delantales de cocina, uniformes y gorras.</p>
+                        <div class="tags">
+                            <span>Franelas</span>
+                            <span>Uniformes</span>
+                            <span>Gorras</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pilar 2: Tazas y Vasos -->
+                <div class="service-card clickable-service" data-service="tazas">
+                    <div class="card-image">
+                        <img src="assets/images/pilar2_mugs_glasses.png" alt="Tazas y Vasos Personalizados">
+                    </div>
+                    <div class="card-body">
+                        <h3>2. Tazas y Vasos Personalizados</h3>
+                        <p>Personalizados con el logo de su empresa o cualquier diseño de su preferencia.</p>
+                        <div class="tags">
+                            <span>Tazas</span>
+                            <span>Logo Corporativo</span>
+                            <span>Diseño Único</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pilar 3: Lámina de Aluminio -->
+                <div class="service-card clickable-service" data-service="aluminio">
+                    <div class="card-image">
+                        <img src="assets/images/pilar3_aluminio.png" alt="Lámina de Aluminio">
+                    </div>
+                    <div class="card-body">
+                        <h3>3. Lámina de Aluminio Personalizada</h3>
+                        <p>Ideal para matrimonios, promoción de grados desde primaria hasta nivel profesional.</p>
+                        <div class="tags">
+                            <span>Aluminio</span>
+                            <span>Fotografía</span>
+                            <span>Graduaciones</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pilar 4: Souvenirs -->
+                <div class="service-card clickable-service" data-service="souvenirs">
+                    <div class="card-image">
+                        <img src="assets/images/pilar4_souvenirs.png" alt="Souvenirs">
+                    </div>
+                    <div class="card-body">
+                        <h3>4. Souvenirs y Regalos</h3>
+                        <p>Llaveros, bolígrafos, cajitas, bolsas, rompecabezas, cholas y mucho más.</p>
+                        <div class="tags">
+                            <span>Llaveros</span>
+                            <span>Puzzles</span>
+                            <span>Merchandising</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Catálogo -->
+        <section id="catalogo" class="catalog container">
+            <div class="section-title">
+                <span class="badge">Elegancia & Calidad</span>
+                <h2>Catálogo de Productos</h2>
+                <p>Explora nuestras creaciones exclusivas organizadas por nuestras cuatro áreas maestras.</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="textiles">Textiles</button>
+                <button class="filter-btn" data-filter="tazas">Tazas & Vasos</button>
+                <button class="filter-btn" data-filter="aluminio">Aluminio</button>
+                <button class="filter-btn" data-filter="souvenirs">Souvenirs</button>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- TEXTILES (Colección Completa - 25 items) -->
+
+                <!-- Cristiana (1-15) -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist01.png" alt="Franela Cristiana 01">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 01</h4>
+                        <p>Calidad premium para tu fe.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist02.png" alt="Franela Cristiana 02">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 02</h4>
+                        <p>Diseño inspirado y único.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <!-- Adding items fracrist03 to fracrist09 for brevity in thought, but I will put all in the actual tool call -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist03.png" alt="Franela Cristiana 03">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 03</h4>
+                        <p>Un mensaje que trasciende.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist04.png" alt="Franela Cristiana 04">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 04</h4>
+                        <p>Estilo y espiritualidad.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist05.png" alt="Franela Cristiana 05">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 05</h4>
+                        <p>Elegancia en cada detalle.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist06.png" alt="Franela Cristiana 06">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 06</h4>
+                        <p>Fe en movimiento.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist07.png" alt="Franela Cristiana 07">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 07</h4>
+                        <p>Compromiso y calidad.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist08.png" alt="Franela Cristiana 08">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 08</h4>
+                        <p>Inspiración diaria.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist09.png" alt="Franela Cristiana 09">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 09</h4>
+                        <p>Tu estilo, tu fe.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist10.png" alt="Franela Cristiana 10">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 10</h4>
+                        <p>Acabado sublime.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist11.png" alt="Franela Cristiana 11">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 11</h4>
+                        <p>Esencia y propósito.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist12.png" alt="Franela Cristiana 12">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 12</h4>
+                        <p>Calidad que perdura.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist13.png" alt="Franela Cristiana 13">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 13</h4>
+                        <p>Mensaje potente.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist14.png" alt="Franela Cristiana 14">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 14</h4>
+                        <p>Diseño exclusivo.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Cristiana</div>
+                    <img src="assets/images/franelas/fracrist14 (2).png" alt="Franela Cristiana 14 v2">
+                    <div class="item-overlay">
+                        <h4>Diseño Cristiana 14 (v2)</h4>
+                        <p>Variante especial.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Diaria / Diá (3 items) -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Diaria</div>
+                    <img src="assets/images/franelas/fradia01.png" alt="Franela Diaria 01">
+                    <div class="item-overlay">
+                        <h4>Diseño Diario 01</h4>
+                        <p>Ideal para el día a día.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Diaria</div>
+                    <img src="assets/images/franelas/fradia02.png" alt="Franela Diaria 02">
+                    <div class="item-overlay">
+                        <h4>Diseño Diario 02</h4>
+                        <p>Comodidad absoluta.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Diaria</div>
+                    <img src="assets/images/franelas/fradia03.png" alt="Franela Diaria 03">
+                    <div class="item-overlay">
+                        <h4>Diseño Diario 03</h4>
+                        <p>Estilo casual premium.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Madre (3 items) -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Especial Mamá</div>
+                    <img src="assets/images/franelas/framadre01.png" alt="Franela Madre 01">
+                    <div class="item-overlay">
+                        <h4>Especial Mamá 01</h4>
+                        <p>El mejor regalo para ella.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Especial Mamá</div>
+                    <img src="assets/images/franelas/framadre02.png" alt="Franela Madre 02">
+                    <div class="item-overlay">
+                        <h4>Especial Mamá 02</h4>
+                        <p>Amor en cada puntada.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Especial Mamá</div>
+                    <img src="assets/images/franelas/framadre03.png" alt="Franela Madre 03">
+                    <div class="item-overlay">
+                        <h4>Especial Mamá 03</h4>
+                        <p>Un detalle inolvidable.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Uniforme (3 items) -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Uniformes</div>
+                    <img src="assets/images/franelas/fraunif01.png" alt="Uniforme 01">
+                    <div class="item-overlay">
+                        <h4>Uniforme 01</h4>
+                        <p>Profesionalismo y calidad.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Uniformes</div>
+                    <img src="assets/images/franelas/fraunif02.png" alt="Uniforme 02">
+                    <div class="item-overlay">
+                        <h4>Uniforme 02</h4>
+                        <p>Identidad para tu equipo.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Uniformes</div>
+                    <img src="assets/images/franelas/fraunif03.png" alt="Uniforme 03">
+                    <div class="item-overlay">
+                        <h4>Uniforme 03</h4>
+                        <p>Durabilidad extrema.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Tu Imagen Aquí -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Personalizado</div>
+                    <img src="assets/images/franelas/tu imagen aqui 2.png" alt="Tu Imagen Aquí">
+                    <div class="item-overlay">
+                        <h4>Tu Diseño Aquí</h4>
+                        <p>Lo que imagines, lo plasmamos.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Diseños</div>
+                    <img src="assets/images/franelas/diseños para franelas.png" alt="Diseños para Franelas">
+                    <div class="item-overlay">
+                        <h4>Diseños para Franelas</h4>
+                        <p>Variedad de estilos para personalizar tu prenda.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Bolsos -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Bolsos</div>
+                    <img src="assets/images/franelas/bolso01.png" alt="Bolso Personalizado 01">
+                    <div class="item-overlay">
+                        <h4>Bolso Personalizado 01</h4>
+                        <p>Elegancia y utilidad en un solo producto.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Bolsos</div>
+                    <img src="assets/images/franelas/bolsos02.png" alt="Bolso Personalizado 02">
+                    <div class="item-overlay">
+                        <h4>Bolso Personalizado 02</h4>
+                        <p>Diseño exclusivo para tu día a día.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Delantales -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Delantales</div>
+                    <img src="assets/images/franelas/delantar01.png" alt="Delantal Personalizado 01">
+                    <div class="item-overlay">
+                        <h4>Delantal Personalizado 01</h4>
+                        <p>Protección con estilo para tu cocina.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Delantales</div>
+                    <img src="assets/images/franelas/delantar02.png" alt="Delantal Personalizado 02">
+                    <div class="item-overlay">
+                        <h4>Delantal Personalizado 02</h4>
+                        <p>Calidad premium para chefs y aficionados.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Gorras -->
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Gorras</div>
+                    <img src="assets/images/franelas/gorra01.png" alt="Gorra Personalizada 01">
+                    <div class="item-overlay">
+                        <h4>Gorra Personalizada 01</h4>
+                        <p>El complemento ideal para tu outfit.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="textiles">
+                    <div class="item-badge">Colección Gorras</div>
+                    <img src="assets/images/franelas/gorras02.png" alt="Gorra Personalizada 02">
+                    <div class="item-overlay">
+                        <h4>Gorra Personalizada 02</h4>
+                        <p>Diseño moderno y ajustable.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- OTRAS CATEGORÍAS -->
+
+                <!-- Tazas & Vasos -->
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Top Ventas</div>
+                    <img src="assets/images/tasas y vaso/tazas.png" alt="Colección de Tazas">
+                    <div class="item-overlay">
+                        <h4>Colección de Tazas</h4>
+                        <p>Variedad de estilos para cada ocasión.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Diseño Único</div>
+                    <img src="assets/images/tasas y vaso/tasa02.png" alt="Taza Personalizada 02">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 02</h4>
+                        <p>Elegancia en cada detalle.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Premium</div>
+                    <img src="assets/images/tasas y vaso/tasa03.png" alt="Taza Personalizada 03">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 03</h4>
+                        <p>Acabado brillante de alta calidad.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Especial</div>
+                    <img src="assets/images/tasas y vaso/tasa04.png" alt="Taza Personalizada 04">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 04</h4>
+                        <p>Ideal para regalos memorables.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Estilo</div>
+                    <img src="assets/images/tasas y vaso/tasa05.png" alt="Taza Personalizada 05">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 05</h4>
+                        <p>Tu diseño favorito en tu taza diaria.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Corporativo</div>
+                    <img src="assets/images/tasas y vaso/tasa06.png" alt="Taza Personalizada 06">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 06</h4>
+                        <p>Identidad para tu empresa o marca.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Creativo</div>
+                    <img src="assets/images/tasas y vaso/tasa07.png" alt="Taza Personalizada 07">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 07</h4>
+                        <p>Creatividad plasmada en cerámica.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Moderno</div>
+                    <img src="assets/images/tasas y vaso/tasa08.png" alt="Taza Personalizada 08">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 08</h4>
+                        <p>Diseños que marcan la diferencia.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Exclusivo</div>
+                    <img src="assets/images/tasas y vaso/tasa09.png" alt="Taza Personalizada 09">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 09</h4>
+                        <p>Calidad sublime garantizada.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Nuevas Tazas (10-15) añadidas siguiendo el mismo patrón -->
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa10.png" alt="Taza Personalizada 10">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 10</h4>
+                        <p>Diseño exclusivo.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa11.png" alt="Taza Personalizada 11">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 11</h4>
+                        <p>Acabado brillante.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa12.png" alt="Taza Personalizada 12">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 12</h4>
+                        <p>Perfecta para regalos.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa13.png" alt="Taza Personalizada 13">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 13</h4>
+                        <p>Diseño moderno.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa14.png" alt="Taza Personalizada 14">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 14</h4>
+                        <p>Edición limitada.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="tazas">
+                    <div class="item-badge">Novedad</div>
+                    <img src="assets/images/tasas y vaso/tasa15.png" alt="Taza Personalizada 15">
+                    <div class="item-overlay">
+                        <h4>Taza Personalizada 15</h4>
+                        <p>Calidad y estilo.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Aluminio: Todas las imágenes de la carpeta 'cuadro en aluminio' -->
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum01.png" alt="Afiche Alum 01">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 01</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum02.png" alt="Afiche Alum 02">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 02</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum03.png" alt="Afiche Alum 03">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 03</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum04.png" alt="Afiche Alum 04">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 04</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum05.png" alt="Afiche Alum 05">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 05</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum06.png" alt="Afiche Alum 06">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 06</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum07.png" alt="Afiche Alum 07">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 07</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum08.png" alt="Afiche Alum 08">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 08</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum09.png" alt="Afiche Alum 09">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 09</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum10.png" alt="Afiche Alum 10">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 10</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum11.png" alt="Afiche Alum 11">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 11</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum12.png" alt="Afiche Alum 12">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 12</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum13.png" alt="Afiche Alum 13">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 13</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum14.png" alt="Afiche Alum 14">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 14</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum15.png" alt="Afiche Alum 15">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 15</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum16.png" alt="Afiche Alum 16">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 16</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="aluminio">
+                    <div class="item-badge">Aluminio</div>
+                    <img src="assets/images/Aluminio/afichealum17.png" alt="Afiche Alum 17">
+                    <div class="item-overlay">
+                        <h4>Afiche Aluminio 17</h4>
+                        <p>Impresión en aluminio.</p>
+                        <span class="price">Consultar</span>
+                    </div>
+                </div>
+
+                <!-- Souvenirs -->
+                <div class="catalog-item" data-category="souvenirs">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+                        alt="Rompecabezas">
+                    <div class="item-overlay">
+                        <h4>Rompecabezas Personalizado</h4>
+                        <p>Un regalo divertido y único para recordar.</p>
+                        <span class="price">Desde $12</span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="souvenirs">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=800&auto=format&fit=crop"
+                        alt="Llavero">
+                    <div class="item-overlay">
+                        <h4>Llavero Metálico</h4>
+                        <p>Grabado láser de alta precisión.</p>
+                        <span class="price">Desde $5</span>
+                    </div>
+                </div>
+            </div>
+
+        <section id="nuevas-imagenes" class="container nuevas-imagenes">
+            <div class="section-title">
+                <h2>Nuevas Imágenes</h2>
+                <p>Imágenes añadidas desde las carpetas solicitadas.</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Se removió la galería duplicada de 'Cuadro en Aluminio' (las imágenes ahora están en el catálogo principal) -->
+
+                <!-- Imágenes de tazas removidas: ahora se usan entradas 'catalog-item' dentro del catálogo principal -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Agente Proactivo UI -->
+    <div id="agent-container" class="agent-container">
+        <div id="agent-bubble" class="agent-bubble">
+            <span class="notification-badge">1</span>
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Sublime" alt="IA Sublime">
+        </div>
+
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="agent-info">
+                    <img src="https://api.dicebear.com/7.x/personas/svg?seed=Rut" alt="Rut IA">
+                    <div>
+                        <h4>Rut</h4>
+                        <span class="status">En línea - Creaciones Sublime</span>
+                    </div>
+                </div>
+                <button id="closeChat">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <!-- Los mensajes se cargarán aquí dinámicamente -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+                <button id="sendMessage"><span>&#10148;</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Creaciones Sublime - La Guaira, Venezuela. Calidad y Estilo.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
